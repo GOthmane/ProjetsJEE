@@ -1,0 +1,151 @@
+@CHARSET "UTF-8";
+
+body{
+	background-color:#6db6b6;
+}
+
+/*Bordures des cellules du tableau*/
+td, th{
+	border:1px solid black;
+	padding:5px;
+}
+/*Enlever les espaces*/
+table{
+	border-collapse:collapse;
+	margin-bottom:10px;
+}
+
+#section-1{
+	background-color: rgba(168,197,36,0.6);
+	padding:10px;
+	margin:20px 0px;
+}
+#section-2{
+	background-color: #8080ff;
+	padding:10px;
+	margin:20px 0px;
+}
+legend{
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size:18px;
+	color: #444;
+}
+/*Appliquer le style dans les input de section-1*/
+#section-1 input{
+	width: 300px;
+	height:20px;
+}
+#section-1 label{
+	display:inline-block;
+	width:200px;
+	padding:10px 0px 15px 40px;
+}
+#section-2 label{
+	display:inline-block;
+	width:200px;
+	padding:10px 0px 15px 40px;
+}
+/*Appliquer le style dans le bouton de type submit*/
+input[type="submit"]{
+	background-color: #fe6921;
+}
+
+	
+span{
+	color:red;
+}
+
+/*Si la largeur de l'écran est inférieure à 681px*/
+@media screen and (max-width:680px) {
+	body {
+		width: 100%;
+		margin: 0 auto;
+	}
+	#entete {
+		border: 1px solid black;
+		margin-bottom: 1%;
+		padding: 0 1%;
+		text-align: center;
+	}
+	#nav {
+		width: 100%;
+	}
+	#content {
+		width: 100%;
+	}
+	.block {
+		border: 1px solid black;
+		margin-bottom: 1%;
+		padding: 0 1%;
+	}
+	.footer {
+		text-align: center;
+	}
+}
+
+/*Si la largeur de l'écran est comprise entre 681px et 1279px*/
+@media screen and (min-width:681px) and (max-width:1279px) {
+	body {
+		width: 100%;
+		margin: 0 auto;
+	}
+	#entete {
+		border: 1px solid black;
+		margin-bottom: 1%;
+		padding: 0 1%;
+		text-align: center;
+	}
+	.menu1{
+		width: 45%;
+		float: left;
+		border: 1px solid black;
+	}
+	.menu2{
+		width: 45%;
+		float: right;
+		border: 1px solid black;
+	}
+	#content {
+		width: 100%;
+		clear:left;
+	}
+		.block {
+		border: 1px solid black;
+		margin-bottom: 1%;
+		padding: 0 1%;
+	}
+	.footer {
+		text-align: center;
+	}
+}
+
+/*Si la largeur de l'écran est supérieure à 1279px*/
+@media screen and (min-width:1280px) {
+	body {
+		width: 100%;
+		margin: 0 auto;
+	}
+	#entete {
+		border: 1px solid black;
+		margin-bottom: 1%;
+		padding: 0 1%;
+		text-align: center;
+	}
+	#nav {
+		width: 25%;
+		float: left;
+	}
+	#content {
+		width: 65%;
+		float: right;
+	}
+	.block {
+		border: 1px solid black;
+		margin-bottom: 1%;
+		padding: 0 1%;
+	}
+	.footer {
+		text-align: center;
+	}
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/style.css" />
+<title>Formulaire</title>
+</head>
+<body>
+<div id="content">
+		<div class="block">
+		<h2>Formulaire</h2>
+		<form method="post" action="MaServlet">
+			<fieldset id="section-1">
+				<legend>Informations personnelles</legend>
+				<label for="nom">Saisir votre nom :</label>
+				<input type="text" name="nom" id="nom"/><br/>
+				<label for="prenom">Saisir votre prénom :</label>
+				<input type="text" name="prenom" id="prenom"/><br/>
+				<label for="mdp">Saisir votre mot de passe :</label>
+				<input type="password" name="mdp" id="mdp"/><br/>
+			</fieldset>
+			<fieldset id="section-2">
+				<legend>Informations complémentaires</legend>
+				Loisirs:
+				Cinéma<input type="checkbox" name="loisirs" value="cinéma">
+				Foot<input type="checkbox" name="loisirs" value="foot">
+				Natation<input type="checkbox" name="loisirs" value="natation">
+				Jeux vidéos<input type="checkbox" name="loisirs" value="jeux vidéos">
+			</fieldset>
+			<input type="submit" value="valider"/>
+		</form>
+		</div>
+</div>
+</body>
+</html>
